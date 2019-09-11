@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Hangman</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			  crossorigin="anonymous"></script>
+	<script src="index.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet"> 
+    <style>
+    * {
+        font-family: 'Ubuntu Mono', sans;
+        white-space: pre;
+    }
+    </style>
+</head>
+<body>
+	<h1>Welcome to Hangman!</h1>
+	<h3>Select a game below to view results or keep playing</h3>
+
+	<table id=gameList>
+		<tbody>
+			<tr>
+				<th>ID</th>
+				<th>GuessBoard</th>
+				<th>Guessed Letters</th>
+				<th>Game Over</th>
+				<th>Link</th>
+			</tr>
+		</tbody>
+	</table>
+	<div id="gameList"></div>
+	<h3>Make a new game</h3>
+	<input id="newGameText" type="text"/>
+	<input id="submit" type="submit" value="Submit" />
+</body>
+</html>
