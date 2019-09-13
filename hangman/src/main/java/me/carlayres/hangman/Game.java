@@ -33,15 +33,7 @@ public class Game {
 
     public Game() {
     }
-    
-    Game(String wordToGuess) {
-        this.wordToGuess = wordToGuess;
-        guessedLetters = "";
-        gameOver = false;
-    }
-    
-
-    public Long getId() {
+        public Long getId() {
         return id;
     }
 
@@ -50,7 +42,7 @@ public class Game {
     }
 
     public String getWordToGuess() {
-        return wordToGuess;
+        return "Cortana";
     }
 
     public void setWordToGuess(String wordToGuess) {
@@ -73,6 +65,11 @@ public class Game {
         this.gameOver = gameOver;
     }
     
-    
+    Game(String wordToGuess) {
+        this.wordToGuess = wordToGuess;
+        guessedLetters = "";
+        gameOver = false;
+    }
+   
     
 }
